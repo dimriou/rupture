@@ -15,7 +15,6 @@ syntax:
 	# mdl etc
 test:
 	cd backend && python manage.py test
-	cd sniffer && python test_sniff.py
+	cd sniffer && nosetests --with-coverage --cover-package=app,sniffer
 	cd realtime && npm run test
 	cd client && npm run test
-	cd realtime && npm run test
