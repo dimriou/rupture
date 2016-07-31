@@ -12,4 +12,4 @@ install:
 script:
     - make all
 after_success:
-    - coveralls
+    - coveralls --merge=client/coverage/coverage.json
