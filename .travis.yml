@@ -12,4 +12,4 @@ install:
 script:
     - make all
 after_success:
-    - cd backend && coveralls
+    - coveralls
