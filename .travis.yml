@@ -11,3 +11,5 @@ install:
     - cd realtime && npm install && cd ..
 script:
     - make all
+after_success:
+    - cd backend && coveralls
